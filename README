@@ -1,0 +1,5 @@
+mobile twitter反向代理，t.co反向代理
+
+sub.domain.com是主站域名，sub2.domain.com是用于二次替换的辅助域名。因为sub_filter默认只能做一次替换，所以用两次反代来实现替换mobile.twitter.com和t.co。
+
+sub3.domain.com是用于反代t.co的域名。
