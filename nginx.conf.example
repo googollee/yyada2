@@ -46,7 +46,7 @@ server {
   location / {
     gzip on;
     proxy_set_header Accept-Encoding "";
-    proxy_redirect https://mobile.twitter.com/ https://sub.domain.com;
+    proxy_redirect https://mobile.twitter.com/ https://sub.domain.com/;
     proxy_pass https://mobile.twitter.com$request_uri;
     sub_filter https://mobile.twitter.com https://sub.domain.com;
     sub_filter_once off;
